@@ -65,7 +65,7 @@ export default function SubscribePage() {
   if (!currentUser) {
     return (
       <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Subscribe</h1>
+        <h1 className="text-2xl font-bold mb-4">Subscribe 1</h1>
         <p>Please log in to view subscription options.</p>
       </div>
     )
@@ -74,7 +74,7 @@ export default function SubscribePage() {
   if (!isInitialized || loading) {
     return (
       <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Subscribe</h1>
+        <h1 className="text-2xl font-bold mb-4">Subscrib 2</h1>
         <p>Loading subscription options...</p>
       </div>
     )
@@ -83,7 +83,7 @@ export default function SubscribePage() {
   if (error) {
     return (
       <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Subscribe</h1>
+        <h1 className="text-2xl font-bold mb-4">Subscribe 3</h1>
         <p className="text-red-500">{error}</p>
       </div>
     )
@@ -100,7 +100,7 @@ export default function SubscribePage() {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Subscribe</h1>
+      <h1 className="text-2xl font-bold mb-4">Subscribe 4</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {offerings.map((pkg) => {
           const product = pkg.webBillingProduct
